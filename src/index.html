@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="UTF-8" />
+  <title>Hello World!</title>
+  <link rel="stylesheet" href="index.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+
+</head>
+
+<body>
+  <div class="apptitle">
+    <div class="window-controls">
+      <div class="hover-bar">My App</div>
+      <button id="minimize-btn" class="window-btn">&#9473;</button>
+      <button id="maximize-btn" class="window-btn">&#9633;</button>
+      <button id="close-btn" class="window-btn">&#10005;</button>
+    </div>
+  </div>
+  <div class="appcontainer">
+    <div class="navbar">
+      <nav>
+        <ul>
+          <li><a style="background-color: rgb(132, 132, 219);" class="navel"><i class="fa-solid fa-users-line"></i></a></li>
+          <li><a style="background-color: rgb(212, 129, 61);" class="navel"><i class="fa-solid fa-shield-cat"></i></a></li>
+          <li><a style="background-color: rgb(91, 101, 16);" class="navel"><i class="fa-solid fa-shield-dog"></i></a></li>
+        </ul>
+      </nav>
+    </div>
+    <div class="rightcontainer">
+      <div class="channelcontainer">
+        <section>
+          <input class="searchconv" type="text" placeholder="Find or start a conversation">
+          <ul>
+            <h5>Friends</a></h5>
+            <li><a>Friend 1</a></li>
+            <h5><a>Library</a></li>
+          </ul>
+        </section>
+      </div>
+      <div class="messagecontainer" id="messagelist">
+        <ul>
+          <li>
+            <img src="../avatar.jpg" alt="User Avatar" />
+            <div class="messagecontent">
+              <div class="messagetop">
+                <span class="username">Sender</span>
+                <span class="timestamp">13:30</span>
+              </div>
+              <div class="messagebottom">
+                <p>Hello!</p>
+              </div>
+            </div>
+          </li>
+          <li>
+            <img src="../avatar2.jpg" alt="User Avatar" />
+            <div class="messagecontent">
+              <div class="messagetop">
+                <span class="username">Receiver</span>
+                <span class="timestamp">13:31</span>
+              </div>
+              <div class="messagebottom">
+                <p>Hi there!</p>
+              </div>
+            </div>
+          </li>
+        </ul>
+        <div class="textinput" id="messagebox">
+          <input type="text" placeholder="Type your message here" />
+          <button onclick="sendMessage()">Send</button>
+        </div>
+      </div>
+
+    </div>
+  </div>
+  <script src="renderer.cjs"></script>
+  <script src="messages.cjs"></script>
+</body>
+
+</html>
